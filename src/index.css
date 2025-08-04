@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,body{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+html, body, #root {
+  min-height: 100%;
+  background-color: #050B16;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+.glow-bg{
+-webkit-box-shadow: 0px 0px 40px 0px rgba(42, 197, 232, 0.5);
+-moz-box-shadow: 0px 0px 40px 0px rgba(42, 197, 232, 0.5);
+box-shadow: 0px 0px 40px 0px rgba(42, 197, 232, 0.5);
+
+}
+.perspective {
+  perspective: 1000px;
+}
+
+.flip-3d {
+  transform-style: preserve-3d;
+}
+.project-card::after {
+  content: "";
+  position: absolute;
+  inset: 0; /* same as top: 0; left: 0; right: 0; bottom: 0 */
+  /* background-color: #1f1f1f9a; */
+  z-index: 0;
+  transform: scaleX(1);
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.4s ease;
+  z-index: 0;
+}
+
+.project-card:hover::before {
+  transform: scaleX(1);
+}
+.project-card {
+  overflow: visible; /* allow children to go outside bounds */
+  position: relative;
+}
