@@ -59,7 +59,7 @@ const Projects = () => {
                 <h2 className='text-xl md:text-5xl font-bold text-[#66fcff]' >Talk Time</h2>
                 <div className='text-sm md:text-lg italic w-[70%]' >It is a real-time messaging application made using socket.io</div>
                 <div className='flex items-center gap-2'>
-                    <Button linkto={"https://talktime-xi.vercel.app/login"} text={'Checkout'}></Button>
+                    <Button linkto={"https://chat-app-ten-alpha-45.vercel.app/login"} text={'Checkout'}></Button>
                     <a className='cursor-pointer' href='https://github.com/annantbansal'><FaGithub className='text-white hover:text-[#66fcff] w-12 h-12'></FaGithub></a>
                 </div>
             </div>
