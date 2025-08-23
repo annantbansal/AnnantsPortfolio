@@ -52,3 +52,7 @@ box-shadow: 0px 0px 40px 0px rgba(42, 197, 232, 0.5);
   overflow: visible; /* allow children to go outside bounds */
   position: relative;
 }
+.modal-content{
+  scrollbar-width: thin;
+  scrollbar-color: rgb(134, 134, 134) #050B16 ;
+}
